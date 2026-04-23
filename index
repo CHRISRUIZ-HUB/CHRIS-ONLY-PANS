@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Only Pans | Finest Cooking Wares</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Only Pans</div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-btn" id="cartBtn">
+      Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Cook Better with Only Pans</h1>
+        <p>
+          Premium pans and quality cooking wares designed for everyday cooks
+          and serious kitchens.
+        </p>
+        <a href="#shop" class="shop-now-btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Premium Quality</h3>
+      <p>Durable cooking wares made to last.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Kitchen Ready</h3>
+      <p>Stylish and practical essentials for every home.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Fast Ordering</h3>
+      <p>Simple shopping experience with an easy cart system.</p>
+    </div>
+  </section>
+
+  <main class="shop-section" id="shop">
+    <div class="section-header">
+      <h2>Our Collection</h2>
+      <p>The finest pans for cooking and quality wares for your kitchen.</p>
+    </div>
+
+    <div class="controls">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+      />
+
+      <div class="filters">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="Pans">Pans</button>
+        <button class="filter-btn" data-category="Cookware">Cookware</button>
+        <button class="filter-btn" data-category="Accessories">Accessories</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+  </main>
+
+  <section class="about-section" id="about">
+    <div class="section-header">
+      <h2>About Only Pans</h2>
+      <p>
+        Only Pans brings together quality, style, and function to help make
+        cooking easier and better. Whether you are frying, sautéing, simmering,
+        or serving, our products are built for real kitchens.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Email: hello@onlypans.com</p>
+      <p>Phone: +63 912 345 6789</p>
+      <p>Location: Your Business Address Here</p>
+    </div>
+  </section>
+
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCartBtn" class="close-cart">&times;</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+      <h3>Total: ₱<span id="cartTotal">0.00</span></h3>
+      <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Only Pans. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
